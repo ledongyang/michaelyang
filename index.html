@@ -8,12 +8,15 @@
   <!-- Bootstrap Core -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Custom Fonts -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="page-top">
+  <div id="background"></div>
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
     <i class="fa fa-bars"></i>
@@ -23,7 +26,138 @@
       <li class="sidebar-brand">
         <a class="js-scroll-trigger" href="#page-top">Michael Yang</a>
       </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">Resume</a>
+      </li>
     </ul>
   </nav>
+
+  <!-- About -->
+  <section class="content-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img id="portrait" src="./images/portrait.png" alt="my-photo">
+        </div>
+        <div class="col-md-8">
+          <div id="typedtext"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3>Recent Projects</h3>
+      </div>
+      <div class="row no-gutters">
+        <!-- Project 1 -->
+        <div class="col-md-6">
+          <a class="portfolio-item" href="https://github.com/ledongyang/react-components" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>React Components</h2>
+                <h5>React UI Component Library</h5>
+                <p>Personal Project</p>
+                <p>Created with React and UIKit CSS Framework</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="./images/react-components.png" alt="">
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6">
+          <a class="portfolio-item" href="https://github.com/Assassins-adlm/assassins-firebase" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Geo-Assassin</h2>
+                <h5>Location based game</h5>
+                <p>Group project</p>
+                <p>Created with React, Firebase, Google Map API, and Material UI</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="./images/geo-assassin.png" alt="">
+          </a>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6">
+          <a class="portfolio-item" href="https://github.com/ledongyang/stackathon-dragonStone" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Dragon Stone</h2>
+                <h5>TCG Card Game</h5>
+                <p>Personal Hackthon Project</p>
+                <p>Created with React and GSAP Animation Platform</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="./images/dragon-stone.png" alt="">
+          </a>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-6">
+          <a class="portfolio-item" href="https://github.com/GraceShopperDMDM/grace-shopper-dmdm" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>COCO Chocolate</h2>
+                <h5>Grace Shopper E-Commerce Website</h5>
+                <p>Group Project</p>
+                <p>Created with React, Redux, Node, Express, and PostgreSQL</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="./images/coco-chocolate.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div id="contact">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://github.com/ledongyang" target="_blank">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/michaelyangldy/" target="_blank">
+              <i class="icon-social-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="mailto:ledongyang@gmail.com">
+              <i class="icon-social-google"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scroll to top button -->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery plugin JS -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/style.js"></script>
 </body>
 </html>
